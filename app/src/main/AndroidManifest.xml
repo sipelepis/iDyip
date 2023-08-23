@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.idyip_mobilebasedfarecollectionsystem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IDyipMobileBasedFareCollectionSystem">
+        <activity android:name=".main_userscreen_activity"/>
+        <activity android:name=".splash_page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".thirdpart_registerform" />
+        <activity android:name=".secondpart_registerform" />
+        <activity android:name=".firstpart_registerform" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

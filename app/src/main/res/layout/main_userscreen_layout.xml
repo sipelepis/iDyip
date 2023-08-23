@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".main_userscreen_activity"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/BGColor"
+        android:id="@+id/navigation_view"
+        app:headerLayout="@layout/menu_profile_header"
+        app:menu="@menu/nav_drawer_menu"
+        android:layout_gravity="start"
+        />
+    <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="736dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/BGColor">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bgconsistent"
+                android:orientation="vertical">
+
+              <include
+                    android:id="@+id/toolbar1"
+                    layout="@layout/toolbar_main"></include>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="677dp"
+                    android:background="@color/BGColor">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="419dp"
+                        android:layout_height="345dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@drawable/ic_bgconsistent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <Button
+                        android:id="@+id/button_4"
+                        android:layout_width="0dp"
+                        android:layout_height="100sp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="24dp"
+                        android:drawableLeft="@drawable/ic_baseline_help_24"
+                        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                        android:gravity="center_vertical"
+                        android:text="Help"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_3" />
+
+                    <Button
+                        android:id="@+id/button_1"
+                        android:layout_width="0dp"
+                        android:layout_height="100sp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="24dp"
+                        android:drawableLeft="@drawable/ic_ticket"
+                        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                        android:gravity="center_vertical"
+                        android:text="Book a trip"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button_2"
+                        android:layout_width="0dp"
+                        android:layout_height="100sp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="24dp"
+                        android:drawableLeft="@drawable/ic_wallet"
+                        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                        android:gravity="center_vertical"
+                        android:text="iDyip Wallet"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_1" />
+
+                    <Button
+                        android:id="@+id/button_3"
+                        android:layout_width="0dp"
+                        android:layout_height="100sp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="24dp"
+                        android:drawableLeft="@drawable/ic_location_trip"
+                        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                        android:gravity="center_vertical"
+                        android:text="Paid Trips"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_2" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
